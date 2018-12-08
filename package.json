@@ -1,0 +1,19 @@
+{
+  "name": "zet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/allexfree/zet.git"
+  },
+  "author": "allexfree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allexfree/zet/issues"
+  },
+  "homepage": "https://github.com/allexfree/zet#readme"
+}
