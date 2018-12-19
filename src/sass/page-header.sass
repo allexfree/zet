@@ -1,0 +1,186 @@
+@import "vars"
+
+.page-header
+  position: relative
+  background-color: #3e464e
+  background-image: url("../img/header-bg.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+.page-header__wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 1200px
+  margin: $margin
+  padding: 0 15px
+  box-sizing: border-box
+
+.page-header__topline
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 32px 0 0
+
+.main-menu
+  position: relative
+  display: flex
+  align-items: center
+  width: 90px
+  height: 35px
+  transform: translateY(-6px)
+  transition: 0.3s all
+  overflow-x: hidden
+  &--active
+    padding-left: 500px
+    background-color: #e8e8e8
+    border-radius: 20px
+
+.main-menu__block-link
+  display: block
+  margin-right: 20px
+  font-family: $font-three
+  font-size: 14px
+  line-height: 36px
+  letter-spacing: -0.4px
+  color: #e8e8e8
+  text-transform: uppercase
+  text-decoration: none
+  &:not(:first-child)
+    font-size: 0
+
+  &:last-child
+    margin-right: 0
+
+.main-menu__block
+  +pseudo
+  top: -1px
+  left: 8px
+  box-sizing: border-box
+  transition: 0.3s all
+  &--active
+    left: 35px
+    .main-menu__block-link
+      color: #29323c
+      &:not(:first-child)
+        font-size: 14px
+
+.main-menu__text
+  margin: 0 17px 0 0
+  font-family: $font-three
+  font-size: 14px
+  line-height: 36px
+  letter-spacing: -0.4px
+  color: #e8e8e8
+  text-transform: uppercase
+  transform: translateY(-6px)
+
+.main-menu__btn
+  position: absolute
+  top: 50%
+  bottom: 50%
+  right: 0
+  display: block
+  width: 21px
+  height: 15px
+  margin-top: -2px
+  padding: 6px 0
+  border: none
+  background-color: transparent
+  transform: translateY(-5px)
+  cursor: pointer
+  span
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 21px
+    height: 2px
+    margin-top: -1px
+    margin-left: -10.5px
+    border-radius: 5px
+    background-color: #f2f2f2
+    &::before,
+    &::after
+      +pseudo
+      width: 21px
+      height: 2px
+      background-color: #f2f2f2
+      border-radius: 5px
+
+    &::before
+      top: -6px
+
+    &::after
+      top: 6px
+
+  &--active
+    outline: none
+    &:hover,
+    &:active
+      opacity: 0.5
+    span
+      background-color: transparent
+      &::before
+        width: 10px
+        background-color: #29323c
+        transform: translateY(5px) rotate(45deg)
+      &::after
+        width: 10px
+        background-color: #29323c
+        transform: translateY(-7px) rotate(-45deg)
+
+.page-header__intro
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding-top: 173px
+  padding-bottom: 298px
+  h1
+    margin-bottom: 27px
+    font-family: $font-three
+    font-size: 36px
+    line-height: 40px
+    letter-spacing: -1.8px
+    color: #e8e8e8
+
+  p
+    width: 630px
+    margin-top: 0
+    margin-bottom: 30px
+    font-family: $font-one
+    font-size: 17px
+    font-weight: 300
+    line-height: 25px
+    letter-spacing: -0.4px
+    text-align: center
+    color: #e8e8e8
+
+  button
+    display: block
+    width: 126px
+    padding: 1px 0
+    border: 1px solid #f2f2f2
+    border-radius: 20px
+    background-color: transparent
+    box-sizing: border-box
+    font-family: $font-three
+    font-size: 13px
+    font-weight: 800
+    line-height: 36px
+    letter-spacing: 0.3px
+    color: #e8e8e8
+    text-transform: uppercase
+    cursor: pointer
+
+  &::after
+    +pseudo($top: 77%, $left: 50%)
+    right: 50%
+    width: 52px
+    height: 154px
+    margin-left: -26px
+    background-image: url("../img/pointer.svg")
+    background-repeat: no-repeat
+    background-size: cover

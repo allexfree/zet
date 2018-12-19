@@ -1,0 +1,136 @@
+@import "vars"
+
+.clients
+  position: relative
+  background-color: #ffffff
+
+.clients__wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 1200px
+  padding: 75px 15px 114px
+  margin: $margin
+  box-sizing: border-box
+
+.clients__header
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 28px
+  &::after
+    +pseudo($top: 90px, $left: 50%)
+    right: 50%
+    width: 40px
+    height: 2px
+    margin-left: -20px
+    opacity: 0.8
+    background-color: #29323c
+
+.clients__header-title
+  margin-bottom: 10px
+  font-family: $font-one
+  font-size: 26px
+  font-weight: 800
+  line-height: 22px
+  letter-spacing: -0.7px
+  text-align: center
+  color: #29323c
+  text-transform: uppercase
+
+.clients__header-text
+  margin-top: 0
+
+.clients__slider
+  position: relative
+  display: flex
+  padding: 0
+  list-style: none
+
+.slick-initialized .clients__slide
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+
+.clients__slider-pagination
+  +pseudo
+  display: flex
+  top: 111%
+  left: 50%
+  right: 50%
+  margin-left: -27px
+  padding: 0
+  list-style: none;
+  li
+    button
+      display: block
+      width: 16px
+      height: 16px
+      margin-right: 4px
+      padding: 0
+      font-size: 0
+      border: none
+      background-color: transparent
+      background-image: url("../img/dot-empty.svg")
+      background-repeat: no-repeat
+      background-size: cover
+      cursor: pointer
+      box-sizing: border-box
+
+  .slick-active
+    button
+      background-image: url("../img/dot.svg")
+
+.clients__slide-header
+  display: flex
+  flex-direction: column
+  align-items: center
+  order: 1
+  span
+    font-family: $font-three
+    font-size: 13px
+    line-height: 20px
+    color: rgba(41, 50, 60, 0.8)
+
+.clients__slide-img
+  display: block
+  width: 65px
+  height: 65px
+  border-radius: 50%
+
+.clients__slide-text
+  margin-top: 10px
+  margin-bottom: 0
+  font-family: $font-three
+  font-size: 15px
+  font-weight: 800
+  line-height: 20px
+  color: #29323c
+
+.clients__slide-blockquote
+  margin-bottom: 64px
+  p
+    position: relative
+    display: block
+    width: 1160px
+    margin: $margin
+    font-family: $font-one
+    font-size: 16px
+    line-height: 26px
+    color: #2b3746
+    text-align: center
+    &::after
+      +pseudo
+      top: 122%
+      left: 50%
+      right: 50%
+      width: 16px
+      height: 11px
+      margin-left: -8px
+      background-image: url("../img/quote.svg")
+      background-repeat: no-repeat
+      background-size: cover
+
+

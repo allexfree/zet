@@ -1,0 +1,50 @@
+@import "vars"
+
+.page-footer
+  position: relative
+  background-color: #f5f5f5
+
+.page-footer__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 1200px
+  margin: $margin
+  padding: 44px 15px
+  box-sizing: border-box
+
+.page-footer__block
+  display: flex
+  align-items: center
+  &:last-child
+    .page-footer__block-text
+      margin-right: 23px
+
+.page-footer__block-text
+  margin: 0
+  line-height: 22px
+  letter-spacing: -0.4px
+  color: #29323c
+
+.page-footer__block-social
+  display: flex
+
+.page-footer__block-link
+  display: block
+  width: 35px
+  height: 35px
+  margin-right: 9px
+  background-repeat: no-repeat
+  background-size: cover
+  &:first-child
+    background-image: url("../img/facebook.svg")
+
+  &:nth-child(2)
+    background-image: url("../img/twitter--footer.svg")
+
+  &:nth-child(3)
+    background-image: url("../img/googleplus.svg")
+
+  &:last-child
+    margin-right: 0
+    background-image: url("../img/dribble--footer.svg")

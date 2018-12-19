@@ -1,0 +1,169 @@
+@import "vars"
+
+.pricing
+  position: relative
+  background-color: #ffffff
+
+.pricing__wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 1200px
+  padding: 80px 15px 117px
+  margin: $margin
+  box-sizing: border-box
+
+.pricing__header
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  align-self: center
+  margin-bottom: 77px
+  &::after
+    +pseudo($top: 90px, $left: 50%)
+    right: 50%
+    width: 40px
+    height: 2px
+    margin-left: -20px
+    opacity: 0.8
+    background-color: #29323c
+
+.pricing__header-title
+  margin-bottom: 10px
+  font-family: $font-one
+  font-size: 26px
+  font-weight: 800
+  line-height: 22px
+  letter-spacing: -0.7px
+  text-align: center
+  color: #29323c
+  text-transform: uppercase
+
+.pricing__header-text
+  margin-top: 0
+
+.pricing__content
+  display: flex
+  justify-content: center
+  align-items: flex-end
+
+.pricing__item
+  display: flex
+  flex-direction: column
+  width: 395px
+  border: 1px solid rgba(221, 221, 221, 0.5)
+  box-sizing: border-box
+  &:nth-child(2)
+    height: 540px
+    padding: 37px 0 21px
+    border-top: 5px solid #485563
+    dt
+      padding-right: 0
+
+    dd
+      padding-right: 0
+
+    th
+      padding: 23px 0 13px
+
+    td
+      padding: 60px 0
+      p
+        padding-right: 0
+        &:last-of-type
+          margin-bottom: 62px
+
+    .pricing__item-link
+      transform: none
+
+  &:last-child
+    dt
+      padding-right: 0
+      padding-left: 22px
+
+    dd
+      padding-right: 0
+      padding-left: 22px
+
+    td
+      padding: 41px 15px 36px
+      p
+        padding-right: 0
+        padding-left: 16px
+        &:last-of-type
+          margin-bottom: 42px
+
+    .pricing__item-link
+      transform: translateX(11px)
+  tr
+    display: flex
+    justify-content: center
+
+  th
+    width: 100%
+    padding: 23px 0 14px
+
+  td
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    padding: 77px 15px 36px
+    border-top: 1px solid rgba(221, 221, 221, 0.5)
+    p
+      margin-top: 0
+      margin-bottom: 18px
+      padding-right: 4px
+      &:last-of-type
+        margin-bottom: 86px
+
+
+.pricing__item-header
+  margin: 0
+  dt
+    padding-right: 19px
+    font-family: $font-three
+    font-size: 20px
+    font-weight: 800
+    line-height: 27px
+    color: #485563
+    span
+      text-transform: uppercase
+
+  dd
+    margin-left: 0
+    padding-right: 20px
+    font-family: $font-three
+    font-size: 45px
+    //line-height: 9px
+    color: #485563
+    span
+      display: block
+      opacity: 0.8
+      font-family: $font-one
+      font-size: 14px
+      font-weight: 300
+      opacity: 0.8
+      color: #29323c
+      text-transform: uppercase
+      transform: translateY(-14px)
+
+.pricing__item-link
+  display: block
+  width: 125px
+  margin: $margin
+  padding: 1px 0
+  border-radius: 20px
+  background-color: #485563
+  font-family: $font-three
+  font-size: 13px
+  font-weight: 800
+  line-height: 36px
+  letter-spacing: 0.3px
+  color: #e8e8e8
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+  transform: translateX(-9px);
+
